@@ -1,0 +1,235 @@
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: auto;
+}
+
+.logo {
+  top:130px;
+  position: absolute;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 170px;
+}
+
+.box {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 28px;
+  border-radius: 10px;
+  background-color: var(--background-language);
+  height: 337px;
+  width: 558px;
+  min-width: 200px;
+  border: 1px solid var(--border-box);
+}
+
+.box-language-selection {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 518px;
+  min-width: 200px;
+  gap: 10px;
+  justify-content: flex-start;
+  /* border: 1px solid salmon; */
+  padding-bottom: 8px;
+}
+
+.box-language-selection-to {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  justify-content: space-between;
+  /* border: 1px solid salmon; */
+  padding-bottom: 20px;
+}
+
+.box-language-border {
+  margin: 0px 5px;
+  border: 1px solid var(--border-box);
+}
+
+.box-language-selection button{
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 15px;
+  background: transparent;
+  color: var(--color-text-button);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.box-language-selection-to button{
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--color-text-button);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.box-language-interchange {
+  color: white;
+  border: 1px solid var(--background-text-button);
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-language-selection .selected-button {
+  background: var(--background-text-button);
+  color: var(--color-text-button-selected)
+}
+
+.box-language-selection-to .selected-button {
+  background: var(--background-text-button);
+  color: var(--color-text-button-selected)
+}
+
+.box-language-selection select {
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  color: var(--color-text-button);
+  font-size: 14px;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  border-radius: 7px;
+  padding: 8px 15px;
+}
+
+.box-language-selection-to select {
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  color: var(--color-text-button);
+  font-size: 16px;
+  cursor: pointer;
+  width: 110px;
+  border-radius: 7px;
+  padding: 8px 15px;
+}
+
+.box-write {
+  display: flex;
+  min-width: 100px;
+  margin-top: 10px;
+  /* border: 1px solid salmon; */
+  height: 150px;
+}
+
+.box-write-input {
+  color: var(--color-text-button-selected);
+  padding: 10px;
+  border: 0px;
+  width: 500px;
+  min-width: 50px;
+  height: 150px;
+  background: transparent;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
+.box-footer {
+  display: flex;
+  justify-content:space-between;
+  height: auto;
+  align-items: flex-end;
+}
+
+.box-footer button {
+  cursor: pointer;
+}
+
+.box-footer-audiocopy {
+  display: flex;
+
+  gap: 5px;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box-footer-audiocopy button {
+  border: 1px solid var(--color-text-button);
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.box-footer-translate {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.box-footer-translate button {
+  border: 1px solid white;
+  background-color: var(--background-translate-button);
+  width: 140px;
+  height: 45px;
+  color: var(--color-text-button-selected);
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.box-footer-translate p {
+  color: var(--color-text-button);
+  font-size: 13px;
+}
+
+/* /* @media screen and (min-width: 1280px) {
+  #root {
+    background-size: 100%;
+  }
+} */
+
+@media (max-width: 1024px){
+
+  .main {
+    flex-flow: wrap;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .box{
+    width: 875px;
+    height: 335px;
+    min-width: 300px;
+    overflow: hidden;
+  }
+
+  .logo {
+    position: inherit;
+  }
+} 
+
+
+@media (max-width: 640px){
+  .box {
+    width: 580px;
+    height: 340px;
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  /* Colors */
+  --background-language: #252736;
+  --border-box: #4d5562;
+  --color-text-button: #6c727f;
+  --background-text-button: #4d5562;
+  --color-text-button-selected: #f9fafc;
+  --background-translate-button : #3662E3;
+}
+
+#root{
+  height: 100vh; 
+  background-image: url("./assets/hero_img.jpg"), linear-gradient(to bottom, #350e22, #2e0f22, #270f21, #210f1f, #1b0e1c, #190c18, #160a15, #130811, #11060c, #0e0407, #0a0203, #040000); 
+  background-repeat: no-repeat;
+  background-size:contain; 
+
+  
+}
